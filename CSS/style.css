@@ -6,7 +6,7 @@
   --section-bg: #fffbe7;
   --card-bg: #fff;
   --border-radius: 16px;
-  --shadow: 0 2px 16px rgba(0,0,0,0.07);
+  --shadow: 0 2px 16px rgba(0, 0, 0, 0.07);
 }
 
 * {
@@ -36,6 +36,7 @@ nav {
   box-shadow: 0 4px 10px rgba(0, 1, 0, 0.5);
   align-items: center;
   border-radius: 5px 5px 16px 16px;
+  margin-bottom: 30px;
 }
 
 nav .left img {
@@ -45,7 +46,7 @@ nav .left img {
   margin-left: 5px;
 }
 
-nav .left span{
+nav .left span {
   font-size: 1.5rem;
   color: var(--text-color);
 }
@@ -75,7 +76,6 @@ main .hero {
   flex-wrap: wrap;
 }
 
-
 main .links a span {
   margin-left: 3px;
 }
@@ -91,18 +91,17 @@ main .links a span {
   min-width: 250px;
 }
 
-.headshot{
+.headshot {
   flex: 0 0 300px;
 }
 
-
-.hero-text h1{
+.hero-text h1 {
   font-size: 2.5rem;
   font-weight: 800;
   margin-bottom: 8px;
 }
 
-.hero-text h2{
+.hero-text h2 {
   font-size: 1.5rem;
   font-weight: 500;
   color: #4a76ee;
@@ -114,7 +113,7 @@ main .links a span {
   margin-bottom: 16px;
 }
 
-.contact-info{
+.contact-info {
   margin-bottom: 10px;
   display: flex;
   flex-wrap: wrap;
@@ -122,7 +121,7 @@ main .links a span {
   font-size: 1rem;
 }
 
-.contact-info span i{
+.contact-info span i {
   margin-right: 5px;
 }
 
@@ -143,7 +142,7 @@ main .links a span {
   background-color: #cecaca;
 }
 
-.section{
+.section {
   background: var(--section-bg);
   border-radius: var(--border-radius);
   box-shadow: var(--shadow);
@@ -151,30 +150,40 @@ main .links a span {
   margin-bottom: 25px;
 }
 
-.section h2{
+.section h2 {
   font-size: 2rem;
   color: #4a76ee;
   margin-bottom: 10px;
   font-weight: 700;
 }
 
-.timeline{
+.timeline {
   border-left: 3px solid #61a712;
   margin-left: 10px;
   padding-left: 24px;
 }
 
-.timeline-item ul{
+.timeline-item ul {
   margin-left: 20px;
   margin-bottom: 5px;
 }
 
-.project-card{
+.project-card {
   margin-bottom: 10px;
 }
 
-.footer{
+.footer {
   color: #888;
   text-align: center;
   padding: 18px 0 10px 0;
+}
+
+
+.transition-class{
+  transition: box-shadow 0.3s, transform 0.3s;
+}
+
+.transition-class:hover {
+  box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+  transform: translateY(-8px) scale(1.03);
 }
